@@ -46,9 +46,8 @@ end
   
 def run(songs) 
   help
-  response = " "
   
-  while response
+  while true do
     puts "Please enter a command:"
     response = gets.downcase.strip
     
