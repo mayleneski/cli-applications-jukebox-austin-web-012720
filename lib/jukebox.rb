@@ -52,15 +52,15 @@ def run(songs)
     response = gets.downcase.strip
     
     case response
-      when 'list'
-        list(songs)
+      when 'exit'
+        exit_jukebox
+        break
+        when 'list'
+          list(songs)
         when 'play'
           play(songs)
         when 'help'
-          help
-        when 'exit'
-          exit_jukebox
-          break
+          
         else
           help
       end  
