@@ -52,18 +52,18 @@ def run(songs)
     response = gets.downcase.strip
     
     case response
-      when 'exit'
-        exit_jukebox
-        break
-        when 'list'
-          list(songs)
-        when 'play'
-          play(songs)
-        when 'help'
-          help
-        else
-          puts "Invalid input"
-      end  
+    when 'exit'
+      exit_jukebox
+      break
+    when 'list'
+      list(songs)
+    when 'play'
+      play(songs)
+    when 'help'
+      help
+    else
+      puts "Invalid input"
     end  
+  end  
     
 end
