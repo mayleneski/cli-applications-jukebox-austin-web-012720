@@ -45,26 +45,24 @@ def exit_jukebox
 end  
   
 def run(songs) 
-  help
-  response = " "
   
-  while response
+  while true do
     puts "Please enter a command:"
     response = gets.downcase.strip
     
     case response
-      when 'list'
-        list(songs)
-        when 'play'
-          play(songs)
-        when 'help'
-          help
-        when 'exit'
-          exit_jukebox
-          break
-        else
-          help
-      end  
+    when 'exit'
+      exit_jukebox
+      break
+    when 'list'
+      list(songs)
+    when 'play'
+      play(songs)
+    when 'help'
+      help
+    else
+      puts "Invalid input"
     end  
+  end  
     
 end
